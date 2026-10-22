@@ -4,95 +4,106 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vagas</title>
-<meta name="theme-color" content="#1e3a8a">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191919" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Vagas">
 <meta name="robots" content="noindex,nofollow">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
 <style>
-:root{--bg:#f4f6fb;--card:#fff;--tx:#0f172a;--mut:#64748b;--bd:#e2e8f0;--pri:#1e3a8a;--priTx:#fff;--ok:#16a34a;--sh:0 1px 3px rgba(15,23,42,.08)}
-@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--card:#131c2e;--tx:#e5e9f2;--mut:#93a0b8;--bd:#24304a;--pri:#4f7cff;--priTx:#fff;--ok:#34d399;--sh:none}}
+:root{--bg:#fff;--tx:#37352f;--mut:#787774;--bd:#e9e9e7;--hov:#f7f7f5;--acc:#2383e2;
+--g-bg:#e3e2e0;--g-tx:#32302c;--gr-bg:#dbeddb;--gr-tx:#1c3829;--bl-bg:#d3e5ef;--bl-tx:#183347;--or-bg:#fadec9;--or-tx:#49290e;--ye-bg:#fdecc8;--ye-tx:#402c1b}
+@media (prefers-color-scheme:dark){:root{--bg:#191919;--tx:#ebebeb;--mut:#9b9b9b;--bd:#2f2f2f;--hov:#252525;--acc:#529cca;
+--g-bg:#454b4e;--g-tx:#ebebeb;--gr-bg:#243d30;--gr-tx:#d3eedd;--bl-bg:#143a4e;--bl-tx:#d3e8f5;--or-bg:#5c3b23;--or-tx:#fbe3d0;--ye-bg:#56452f;--ye-tx:#fdecc8}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:env(safe-area-inset-bottom)}
-header{position:sticky;top:0;z-index:5;background:var(--bg);padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;border-bottom:1px solid var(--bd)}
-h1{font-size:20px;margin:0 0 2px}
-.sub{color:var(--mut);font-size:13px;margin-bottom:8px}
-.bar{display:flex;gap:8px;flex-wrap:wrap}
-.bar input,.bar select{font:inherit;padding:9px 10px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);min-width:0}
-.bar input{flex:1 1 100%}
-.bar select{flex:1 1 30%;font-size:14px;padding:9px 6px}
-.bar input[type=checkbox]{flex:0 0 auto;width:20px;height:20px;padding:0}
-label.tg{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--mut);flex:1 1 100%}
-main{padding:12px 16px 40px;max-width:820px;margin:0 auto;display:grid;gap:12px}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;box-shadow:var(--sh)}
-.card.done{opacity:.55}
-.top{display:flex;gap:10px;align-items:flex-start}
-.score{flex:0 0 auto;min-width:52px;text-align:center;font-weight:700;border-radius:10px;padding:6px 4px;color:#fff}
-.t{font-weight:650;font-size:16px;line-height:1.25}
-.e{color:var(--mut);font-size:14px;margin-top:2px}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
-.chip{font-size:12px;padding:3px 8px;border-radius:99px;background:var(--bg);border:1px solid var(--bd);color:var(--mut)}
-.chip.new{background:#f59e0b;border-color:#f59e0b;color:#111;font-weight:700}
-.btns{display:flex;gap:8px;margin-top:6px}
-.btn{flex:1;text-align:center;font:inherit;font-weight:600;padding:12px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);text-decoration:none;cursor:pointer}
-.btn.pri{background:var(--pri);color:var(--priTx);border-color:var(--pri)}
-.btn.on{background:var(--ok);color:#fff;border-color:var(--ok)}
-details{margin-top:10px;font-size:14px}
-summary{cursor:pointer;color:var(--pri);font-weight:600;padding:4px 0}
-details p{margin:6px 0;color:var(--tx)}
-details b{color:var(--mut);font-weight:600}
-.links{max-width:820px;margin:12px auto 0;padding:0 16px}
-.links details{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:10px 14px;margin:0;box-shadow:var(--sh)}
-.links summary{font-size:15px}
-.links .dl{display:block;margin:10px 0}
-.lk{display:flex;align-items:center;gap:8px;margin:8px 0;font-size:13px}
-.lk span{flex:0 0 62px;color:var(--mut);font-weight:600}
-.lk code{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px}
-.lk button,.lk a{flex:0 0 auto;font:inherit;font-size:13px;font-weight:600;padding:8px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--pri);text-decoration:none}
-.empty{text-align:center;color:var(--mut);padding:40px 0}
-footer{padding:0 16px 30px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-footer button{font:inherit;font-size:13px;padding:8px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--mut)}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI Variable","Segoe UI",Helvetica,Arial,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+.page{max-width:900px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:34px;line-height:1.15;margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:14px;margin-bottom:18px}
+.callout{display:flex;gap:10px;align-items:flex-start;background:var(--hov);border:1px solid var(--bd);border-radius:6px;padding:12px 14px;margin-bottom:18px;font-size:14px}
+.callout .ic{font-size:18px;line-height:1.3}
+.callout .body{flex:1;min-width:0}
+.callout summary{cursor:pointer;font-weight:600;list-style:none}
+.callout summary::-webkit-details-marker{display:none}
+.lk{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+.lk b{flex:0 0 70px;color:var(--mut);font-weight:500}
+.lk code{flex:1 1 180px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--bg);border:1px solid var(--bd);border-radius:4px;padding:3px 8px;font:13px ui-monospace,Menlo,Consolas,monospace}
+.mini{font:inherit;font-size:13px;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:4px;padding:3px 9px;text-decoration:none;cursor:pointer}
+.mini:hover{background:var(--hov)}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px;padding-bottom:10px;border-bottom:1px solid var(--bd)}
+.filters input[type=search],.filters select{font:inherit;font-size:14px;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:4px;padding:5px 8px;outline:none;min-width:0}
+.filters input[type=search]{flex:1 1 100%}
+.filters select{flex:1 1 28%}
+.filters input:focus,.filters select:focus{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.chk{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--mut);flex:1 1 100%;padding-top:2px}
+.row{display:flex;gap:10px;padding:10px 4px;border-bottom:1px solid var(--bd)}
+.row:hover{background:var(--hov)}
+.row.done .main .t{color:var(--mut);text-decoration:line-through}
+.cb{flex:0 0 18px;width:18px;height:18px;margin-top:3px;border:1.5px solid var(--mut);border-radius:3px;background:var(--bg);cursor:pointer;display:grid;place-items:center;padding:0}
+.cb.on{background:var(--acc);border-color:var(--acc)}
+.cb.on::after{content:"";width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.main{flex:1;min-width:0}
+.t{font-weight:600;line-height:1.3}
+.e{color:var(--mut);font-size:14px}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0}
+.tag{font-size:12px;line-height:1.4;padding:0 6px;border-radius:3px;background:var(--g-bg);color:var(--g-tx);white-space:nowrap}
+.tag.gr{background:var(--gr-bg);color:var(--gr-tx)}.tag.bl{background:var(--bl-bg);color:var(--bl-tx)}.tag.or{background:var(--or-bg);color:var(--or-tx)}.tag.ye{background:var(--ye-bg);color:var(--ye-tx)}
+.acts{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.open{font-size:14px;font-weight:500;color:var(--acc);text-decoration:none;padding:3px 0}
+.open:hover{text-decoration:underline}
+.more{font:inherit;font-size:13px;color:var(--mut);background:none;border:0;padding:3px 0;cursor:pointer}
+.more:hover{color:var(--tx)}
+.det{display:none;margin-top:6px;padding-left:10px;border-left:3px solid var(--bd);font-size:14px}
+.det.show{display:block}
+.det p{margin:4px 0}
+.det .lbl{color:var(--mut)}
+.empty{color:var(--mut);padding:30px 0;text-align:center}
+.foot{display:flex;gap:6px;margin-top:24px;flex-wrap:wrap}
+@media (min-width:700px){.filters input[type=search]{flex:1 1 40%}.filters select{flex:0 0 auto}.chk{flex:0 0 auto;padding:0 6px}}
 </style>
 </head>
 <body>
-<header>
-  <h1>Vagas</h1>
+<div class="page">
+  <h1>📋 Vagas</h1>
   <div class="sub" id="sub">Carregando…</div>
-  <div class="bar">
+
+  <div class="callout"><div class="ic">📎</div><div class="body">
+    <details>
+      <summary>Meu currículo e links</summary>
+      <div class="lk"><b>Currículo</b><a class="mini" href="curriculo-roberth-santana-k7q2x9.pdf" download="Roberth_Santana-Curriculo.pdf">Baixar PDF</a></div>
+      <div class="lk"><b>LinkedIn</b><code>https://www.linkedin.com/in/roberthsantana</code><button class="mini" data-copy="https://www.linkedin.com/in/roberthsantana">Copiar</button><a class="mini" href="https://www.linkedin.com/in/roberthsantana" target="_blank" rel="noopener noreferrer">Abrir</a></div>
+      <div class="lk"><b>GitHub</b><code>https://github.com/roberthsilva</code><button class="mini" data-copy="https://github.com/roberthsilva">Copiar</button><a class="mini" href="https://github.com/roberthsilva" target="_blank" rel="noopener noreferrer">Abrir</a></div>
+    </details>
+  </div></div>
+
+  <div class="filters">
     <input id="q" type="search" placeholder="Buscar título ou empresa" autocomplete="off">
-    <select id="min" aria-label="Nota mínima">
-      <option value="0">Qualquer nota</option><option value="40">Nota 40+</option><option value="50">Nota 50+</option><option value="60">Nota 60+</option><option value="70">Nota 70+</option>
-    </select>
-    <select id="plat" aria-label="Plataforma"><option value="">Todas as fontes</option></select>
+    <select id="min" aria-label="Nota mínima"><option value="0">Qualquer nota</option><option value="40">Nota 40+</option><option value="50">Nota 50+</option><option value="60">Nota 60+</option><option value="70">Nota 70+</option></select>
+    <select id="plat" aria-label="Fonte"><option value="">Todas as fontes</option></select>
     <select id="ord" aria-label="Ordem"><option value="s">Maior nota</option><option value="d">Mais recentes</option></select>
-    <label class="tg"><input type="checkbox" id="hide"> Esconder as que já me candidatei</label>
+    <label class="chk"><input type="checkbox" id="hide"> Esconder candidatadas</label>
   </div>
-</header>
-<section class="links">
-  <details>
-    <summary>Meu currículo e links</summary>
-    <a class="btn pri dl" href="curriculo-roberth-santana-k7q2x9.pdf" download="Roberth_Santana-Curriculo.pdf">Baixar currículo (PDF)</a>
-    <div class="lk"><span>LinkedIn</span><code>https://www.linkedin.com/in/roberthsantana</code><button data-copy="https://www.linkedin.com/in/roberthsantana">Copiar</button><a href="https://www.linkedin.com/in/roberthsantana" target="_blank" rel="noopener noreferrer">Abrir</a></div>
-    <div class="lk"><span>GitHub</span><code>https://github.com/roberthsilva</code><button data-copy="https://github.com/roberthsilva">Copiar</button><a href="https://github.com/roberthsilva" target="_blank" rel="noopener noreferrer">Abrir</a></div>
-  </details>
-</section>
-<main id="list"></main>
-<footer>
-  <button id="exp">Exportar marcações</button>
-  <button id="imp">Importar marcações</button>
-</footer>
+
+  <div id="list"></div>
+
+  <div class="foot">
+    <button class="mini" id="exp">Exportar marcações</button>
+    <button class="mini" id="imp">Importar marcações</button>
+  </div>
+</div>
 <script>
 const KEY='vagas_checks_v1', SEED='vagas_seeded_v1';
-let jobs=[], checks={}, seeded={}, latest='';
+let jobs=[], checks={}, seeded={}, latest='', openRows={};
 const $=id=>document.getElementById(id);
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}};
 const save=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
 checks=load(KEY,{}); seeded=load(SEED,{});
-const colorOf=s=>s>=70?'#16a34a':s>=55?'#2563eb':s>=45?'#d97706':'#64748b';
+const scoreCls=s=>s>=70?'gr':s>=55?'bl':s>=45?'or':'';
 const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=d=>d?d.split('-').reverse().join('/'):'';
 function render(){
@@ -101,16 +112,21 @@ function render(){
   a.sort((x,y)=>ord==='d'?(y.dt.localeCompare(x.dt)||y.s-x.s):(y.s-x.s||y.dt.localeCompare(x.dt)));
   const open=jobs.filter(j=>!checks[j.u]).length;
   $('sub').textContent=jobs.length+' vagas · '+open+' sem candidatura · '+(jobs.length-open)+' candidatadas';
-  $('list').innerHTML=a.length?a.map(j=>`<article class="card ${checks[j.u]?'done':''}">
-    <div class="top"><div class="score" style="background:${colorOf(j.s)}">${j.s}%</div>
-      <div><div class="t">${esc(j.t)}</div><div class="e">${esc(j.e)}</div></div></div>
-    <div class="chips"><span class="chip">${esc(j.p)}</span><span class="chip">${fmt(j.dt)}</span>${j.dt===latest?'<span class="chip new">NOVA</span>':''}</div>
-    <div class="btns"><a class="btn pri" href="${esc(j.u)}" target="_blank" rel="noopener noreferrer">Abrir vaga ↗</a>
-      <button class="btn ${checks[j.u]?'on':''}" data-u="${esc(j.u)}">${checks[j.u]?'✓ Candidatei':'Marcar candidatura'}</button></div>
-    <details><summary>Descrição e dicas</summary><p>${esc(j.d)}</p><p><b>Dicas:</b> ${esc(j.r)}</p></details>
-  </article>`).join(''):'<div class="empty">Nenhuma vaga com esses filtros.</div>';
+  $('list').innerHTML=a.length?a.map(j=>`<div class="row ${checks[j.u]?'done':''}">
+    <button class="cb ${checks[j.u]?'on':''}" data-u="${esc(j.u)}" aria-label="Marcar como candidatada"></button>
+    <div class="main">
+      <div class="t">${esc(j.t)}</div><div class="e">${esc(j.e)}</div>
+      <div class="tags"><span class="tag ${scoreCls(j.s)}">${j.s}%</span><span class="tag">${esc(j.p)}</span><span class="tag">${fmt(j.dt)}</span>${j.dt===latest?'<span class="tag ye">Nova</span>':''}</div>
+      <div class="acts"><a class="open" href="${esc(j.u)}" target="_blank" rel="noopener noreferrer">Abrir vaga ↗</a><button class="more" data-m="${esc(j.u)}">· Detalhes</button></div>
+      <div class="det ${openRows[j.u]?'show':''}"><p>${esc(j.d)}</p><p><span class="lbl">Dicas:</span> ${esc(j.r)}</p></div>
+    </div></div>`).join(''):'<div class="empty">Nenhuma vaga com esses filtros.</div>';
 }
-$('list').addEventListener('click',e=>{const b=e.target.closest('button[data-u]');if(!b)return;const u=b.dataset.u;if(checks[u])delete checks[u];else checks[u]=1;save(KEY,checks);render()});
+$('list').addEventListener('click',e=>{
+  const c=e.target.closest('button[data-u]');
+  if(c){const u=c.dataset.u;if(checks[u])delete checks[u];else checks[u]=1;save(KEY,checks);render();return}
+  const m=e.target.closest('button[data-m]');
+  if(m){const u=m.dataset.m;openRows[u]=!openRows[u];m.closest('.main').querySelector('.det').classList.toggle('show',!!openRows[u])}
+});
 document.addEventListener('click',async e=>{const b=e.target.closest('button[data-copy]');if(!b)return;const t=b.dataset.copy;try{await navigator.clipboard.writeText(t)}catch(x){prompt('Copie o link:',t);return}const o=b.textContent;b.textContent='Copiado ✓';setTimeout(()=>b.textContent=o,1500)});
 ['q','min','plat','ord','hide'].forEach(i=>$(i).addEventListener('input',render));
 $('exp').onclick=async()=>{const t=JSON.stringify(Object.keys(checks));try{await navigator.clipboard.writeText(t);alert('Marcações copiadas. Cole em "Importar" em outro aparelho.')}catch(e){prompt('Copie este texto:',t)}};
