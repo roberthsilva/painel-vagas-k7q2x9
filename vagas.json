@@ -988,5 +988,148 @@
 "dt": "2026-10-15",
 "p": "Indeed",
 "c": true
+},
+{
+"t": "Analista de Dados Pleno",
+"e": "Rede Mater Dei",
+"d": "Analista de dados pleno, Belo Horizonte, remoto. Power BI (painéis), Python e SQL; desejável GitLab, dbt e Qlik Sense. Anunciada em post do LinkedIn de 20/10/2026.",
+"s": 62,
+"u": "https://www.linkedin.com/posts/leo-miralles_analista-de-dados-pleno-activity-7518355358499811328-EqYo",
+"r": "Pleno e Python/SQL combinam; Power BI é requisito (lacuna: cite dashboards ou curso). Cite dbt/Git como diferencial. Abra o post e o link da vaga para confirmar regime.",
+"dt": "2026-10-22",
+"p": "LinkedIn (post)",
+"c": false
+},
+{
+"t": "Desenvolvedor Python/Go Lang Pleno | Remoto",
+"e": "PremierSoft",
+"d": "Desenvolvedor Python/Go pleno, remoto. Publicada em 19/10/2026. Detalhes não coletados.",
+"s": 58,
+"u": "https://to.indeed.com/aaxfklkgxxn8",
+"r": "Python/APIs combinam (FastAPI/Django); Go é lacuna. Abra o link para confirmar stack e contrato.",
+"dt": "2026-10-22",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Data Engineer",
+"e": "ANS4 Consultoria",
+"d": "Engenheiro de dados PJ, remoto: pipelines ETL/ELT, integração de fontes, SQL avançado, orquestração e cloud (AWS/Azure/GCP); mínimo 3 anos. Anunciada em post do LinkedIn de 20/10/2026.",
+"s": 55,
+"u": "https://www.linkedin.com/posts/joana-luisa-ara%C3%BAjo-9338842a8_vagasdeti-dataengineer-engenhariadedados-activity-7518407918979854336-BJAQ",
+"r": "SQL avançado e pipelines são seu forte (96h para 1h, 1,5 bi de linhas). Lacuna: cloud e orquestração. Candidatura por mensagem no LinkedIn informando pretensão PJ.",
+"dt": "2026-10-22",
+"p": "LinkedIn (post)",
+"c": false
+},
+{
+"t": "Desenvolvedor(a) Full Stack Pleno - Python + React/TypeScript",
+"e": "Empresa em Curitiba (via RHRoom/recrutadora)",
+"d": "Full stack pleno com Python/Flask, React/TypeScript, API Gateway, RabbitMQ e observabilidade; PJ, 100% remoto fora de Curitiba. Anunciada em post do LinkedIn de 20/10/2026.",
+"s": 52,
+"u": "https://www.linkedin.com/posts/christinacurcio_desenvolvedor-a-full-stack-pleno-activity-7518308693554352131-gCmS",
+"r": "Python/APIs combinam; React/TypeScript, RabbitMQ e Flask são lacunas. Destaque grandes volumes de dados e APIs. Remoto vale por você estar fora de Curitiba.",
+"dt": "2026-10-22",
+"p": "LinkedIn (post)",
+"c": false
+},
+{
+"t": "Desenvolvedor Python Sênior",
+"e": "Nagro.co",
+"d": "Desenvolvedor Python sênior, remoto. Publicada em 22/10/2026. Detalhes não coletados.",
+"s": 52,
+"u": "https://vagas.solides.com.br/vaga/942510",
+"r": "Sênior é stretch; Python combina. Confirme stack e contrato no link.",
+"dt": "2026-10-22",
+"p": "Busca própria (Sólides)",
+"c": false
+},
+{
+"t": "Analista Pleno de BI",
+"e": "Remessa Online",
+"d": "Analista de BI pleno, vaga permanente, remota. Publicada em 20/10/2026. Detalhes não coletados.",
+"s": 50,
+"u": "https://to.indeed.com/aaz2xrgr76d8",
+"r": "Pleno e fintech combinam; confirme ferramentas de BI no link. Destaque SQL, relatórios e consistência de dados.",
+"dt": "2026-10-22",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Especialista back-end Python | plataforma de dados [remoto]",
+"e": "Empresa não informada",
+"d": "Back-end Python especialista em plataforma de dados, remoto. Listada em post agregador do LinkedIn (Netvagas) de 19/10/2026; detalhes no link da vaga dentro do post.",
+"s": 50,
+"u": "https://www.linkedin.com/posts/netvagas-com-br_analista-assistente-bootcamp-activity-7518050663684222977--wyH",
+"r": "Stack Python + dados é a sua, mas nível especialista. Abra o post, clique no link da vaga e confirme nível e contrato.",
+"dt": "2026-10-22",
+"p": "LinkedIn (post)",
+"c": false
+},
+{
+"t": "Data Engineer | Senior",
+"e": "GX2 Tecnologia",
+"d": "Engenheiro de dados sênior, remoto, 44h semanais; pipelines de dados. Publicada em 22/10/2026.",
+"s": 45,
+"u": "https://br.linkedin.com/jobs/view/data-engineer-senior-at-gx2-tecnologia-4481621548",
+"r": "Sênior é stretch; destaque pipelines, SQL tuning e Databricks.",
+"dt": "2026-10-22",
+"p": "LinkedIn",
+"c": false
+},
+{
+"t": "Analista de Dados PL",
+"e": "Olist",
+"d": "Analista de dados pleno em empresa de comércio digital; processo seletivo remoto, CLT; o texto cita home office e presencial (confirmar regime). Publicada em 22/10/2026.",
+"s": 45,
+"u": "https://br.linkedin.com/jobs/view/analista-de-dados-pl-at-olist-4481620797",
+"r": "Confirme se o trabalho é 100% remoto antes de investir. Pleno e SQL/Python combinam.",
+"dt": "2026-10-22",
+"p": "LinkedIn",
+"c": false
+},
+{
+"t": "Engenheiro de Dados Sênior",
+"e": "Empresa não informada (via post)",
+"d": "Engenharia de dados sênior, remoto: Python, PySpark, ETL, SQL, AWS (EMR, Glue, Redshift), Kafka e Airflow. Anunciada em post do LinkedIn de 20/10/2026.",
+"s": 40,
+"u": "https://www.linkedin.com/posts/leo-miralles_engenheiro-de-dados-s%C3%AAnior-activity-7518319431966629888-nkZk",
+"r": "Sênior e AWS/Spark são lacunas; Python, SQL e ETL combinam. Stretch.",
+"dt": "2026-10-22",
+"p": "LinkedIn (post)",
+"c": false
+},
+{
+"t": "Engenheiro(a) de Dados Sênior - Azure Databricks",
+"e": "Jobgether (anúncio no LinkedIn)",
+"d": "Engenharia de dados sênior com Azure Databricks, CLT, remoto, em inglês. Publicada em 23/10/2026.",
+"s": 40,
+"u": "https://www.linkedin.com/jobs/view/4481644063",
+"r": "Databricks (3 certificações) combina; sênior e inglês são lacunas.",
+"dt": "2026-10-22",
+"p": "LinkedIn",
+"c": false
+},
+{
+"t": "Analista de Engenharia de IA Sênior",
+"e": "Inmetrics",
+"d": "Engenharia de IA sênior, CLT, remoto: Python, Java, SQL, clouds, Docker, Kubernetes, TensorFlow/PyTorch. Publicada em 22/10/2026.",
+"s": 40,
+"u": "https://remotar.com.br/job/167622",
+"r": "Python/SQL combinam; sênior e ML (TensorFlow/PyTorch) são lacunas.",
+"dt": "2026-10-22",
+"p": "Remotar",
+"c": false
+},
+{
+"t": "Administrador de banco de dados PostgreSQL - Sênior",
+"e": "Lanlink Informática",
+"d": "DBA PostgreSQL sênior, CLT, remoto: PostgreSQL, Elasticsearch, AWS/Azure, Linux, Power BI. Publicada em 22/10/2026.",
+"s": 38,
+"u": "https://remotar.com.br/job/167729",
+"r": "Foco DBA/infra; seu tuning de SQL combina em parte. Sênior e administração são lacunas.",
+"dt": "2026-10-22",
+"p": "Remotar",
+"c": false
 }
 ]

@@ -62,6 +62,10 @@ h1{font-size:34px;line-height:1.15;margin:0 0 4px;font-weight:700;letter-spacing
 .det.show{display:block}
 .det p{margin:4px 0}
 .det .lbl{color:var(--mut)}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.seg button{font:inherit;font-size:14px;color:var(--mut);background:var(--bg);border:1px solid var(--bd);border-radius:99px;padding:3px 12px;cursor:pointer}
+.seg button.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.tag.tiny{font-size:10px;padding:0 5px;text-transform:uppercase;letter-spacing:.03em;background:var(--gr-bg);color:var(--gr-tx)}
 .empty{color:var(--mut);padding:30px 0;text-align:center}
 .foot{display:flex;gap:6px;margin-top:24px;flex-wrap:wrap}
 @media (min-width:700px){.filters input[type=search]{flex:1 1 40%}.filters select{flex:0 0 auto}.chk{flex:0 0 auto;padding:0 6px}}
@@ -81,6 +85,12 @@ h1{font-size:34px;line-height:1.15;margin:0 0 4px;font-weight:700;letter-spacing
     </details>
   </div></div>
 
+  <div class="seg" id="seg">
+    <button data-m="all" class="on">Todas</button>
+    <button data-m="new" id="segNew">Novas vagas</button>
+    <button data-m="today" id="segToday">Do dia</button>
+  </div>
+
   <div class="filters">
     <input id="q" type="search" placeholder="Buscar título ou empresa" autocomplete="off">
     <select id="min" aria-label="Nota mínima"><option value="0">Qualquer nota</option><option value="40">Nota 40+</option><option value="50">Nota 50+</option><option value="60">Nota 60+</option><option value="70">Nota 70+</option></select>
@@ -98,7 +108,8 @@ h1{font-size:34px;line-height:1.15;margin:0 0 4px;font-weight:700;letter-spacing
 </div>
 <script>
 const KEY='vagas_checks_v1', SEED='vagas_seeded_v1';
-let jobs=[], checks={}, seeded={}, latest='', openRows={};
+let jobs=[], checks={}, seeded={}, latest='', openRows={}, mode='all';
+const pad=n=>String(n).padStart(2,'0'), nowD=new Date(), today=nowD.getFullYear()+'-'+pad(nowD.getMonth()+1)+'-'+pad(nowD.getDate());
 const $=id=>document.getElementById(id);
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}};
 const save=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
@@ -108,7 +119,10 @@ const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const fmt=d=>d?d.split('-').reverse().join('/'):'';
 function render(){
   const q=$('q').value.trim().toLowerCase(), min=+$('min').value, pl=$('plat').value, hide=$('hide').checked, ord=$('ord').value;
-  let a=jobs.filter(j=>j.s>=min&&(!pl||j.p===pl)&&(!q||(j.t+' '+j.e).toLowerCase().includes(q))&&!(hide&&checks[j.u]));
+  const nNew=jobs.filter(j=>j.dt===latest).length, nToday=jobs.filter(j=>j.dt===today).length;
+  $('segNew').textContent='Novas vagas ('+nNew+')'; $('segToday').textContent='Do dia ('+nToday+')';
+  document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.m===mode));
+  let a=jobs.filter(j=>j.s>=min&&(!pl||j.p===pl)&&(!q||(j.t+' '+j.e).toLowerCase().includes(q))&&!(hide&&checks[j.u])&&(mode==='all'||(mode==='new'&&j.dt===latest)||(mode==='today'&&j.dt===today)));
   a.sort((x,y)=>ord==='d'?(y.dt.localeCompare(x.dt)||y.s-x.s):(y.s-x.s||y.dt.localeCompare(x.dt)));
   const open=jobs.filter(j=>!checks[j.u]).length;
   $('sub').textContent=jobs.length+' vagas · '+open+' sem candidatura · '+(jobs.length-open)+' candidatadas';
@@ -116,7 +130,7 @@ function render(){
     <button class="cb ${checks[j.u]?'on':''}" data-u="${esc(j.u)}" aria-label="Marcar como candidatada"></button>
     <div class="main">
       <div class="t">${esc(j.t)}</div><div class="e">${esc(j.e)}</div>
-      <div class="tags"><span class="tag ${scoreCls(j.s)}">${j.s}%</span><span class="tag">${esc(j.p)}</span><span class="tag">${fmt(j.dt)}</span>${j.dt===latest?'<span class="tag ye">Nova</span>':''}</div>
+      <div class="tags"><span class="tag ${scoreCls(j.s)}">${j.s}%</span><span class="tag">${esc(j.p)}</span><span class="tag">${fmt(j.dt)}</span>${j.dt===latest?'<span class="tag ye">Nova</span>':''}${j.dt===today?'<span class="tag tiny">hoje</span>':''}</div>
       <div class="acts"><a class="open" href="${esc(j.u)}" target="_blank" rel="noopener noreferrer">Abrir vaga ↗</a><button class="more" data-m="${esc(j.u)}">· Detalhes</button></div>
       <div class="det ${openRows[j.u]?'show':''}"><p>${esc(j.d)}</p><p><span class="lbl">Dicas:</span> ${esc(j.r)}</p></div>
     </div></div>`).join(''):'<div class="empty">Nenhuma vaga com esses filtros.</div>';
@@ -129,6 +143,7 @@ $('list').addEventListener('click',e=>{
 });
 document.addEventListener('click',async e=>{const b=e.target.closest('button[data-copy]');if(!b)return;const t=b.dataset.copy;try{await navigator.clipboard.writeText(t)}catch(x){prompt('Copie o link:',t);return}const o=b.textContent;b.textContent='Copiado ✓';setTimeout(()=>b.textContent=o,1500)});
 ['q','min','plat','ord','hide'].forEach(i=>$(i).addEventListener('input',render));
+$('seg').addEventListener('click',e=>{const b=e.target.closest('button[data-m]');if(!b)return;mode=b.dataset.m;render()});
 $('exp').onclick=async()=>{const t=JSON.stringify(Object.keys(checks));try{await navigator.clipboard.writeText(t);alert('Marcações copiadas. Cole em "Importar" em outro aparelho.')}catch(e){prompt('Copie este texto:',t)}};
 $('imp').onclick=()=>{const t=prompt('Cole aqui as marcações exportadas:');if(!t)return;try{JSON.parse(t).forEach(u=>checks[u]=1);save(KEY,checks);render()}catch(e){alert('Texto inválido')}};
 fetch('vagas.json?v='+Date.now()).then(r=>r.json()).then(d=>{
