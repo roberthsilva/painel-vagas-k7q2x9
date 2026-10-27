@@ -1131,5 +1131,181 @@
 "dt": "2026-10-22",
 "p": "Remotar",
 "c": false
+},
+{
+"t": "Analista de Dados e Automação Pleno | São Paulo",
+"e": "Shopee",
+"d": "Time de Data Insights de Suprimentos: automações em Python e RPA, pipelines ETL com carga agendada, dashboards para Compras/Logística e carga de tabelas de frete. SQL intermediário/avançado (PostgreSQL/MySQL). Híbrido em SP, horário 14h-22h. Publicada em 15/10/2026.",
+"s": 76,
+"u": "https://to.indeed.com/aaj4n9tdc7k7",
+"r": "Encaixe forte: robôs de ingestão em Python (-60% de erros), ETL e automação de processo crítico (10 dias para 2h). Cite Pandas e validação de dados. Lacunas: Power BI/Looker, Selenium e vivência em supply chain. Atenção ao horário (14h-22h) e plantões eventuais.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Desenvolvedor Inteligência Artificial - RAGs",
+"e": "Dot Digital Group",
+"d": "Plataforma de IA generativa com RAG, agentes e LangChain; backend Python/Django e FastAPI, MongoDB, OpenSearch, Celery, MCPs. CLT, 100% remoto. Aceita quem ainda não tem prática em IA. Publicada em 22/10/2026.",
+"s": 75,
+"u": "https://to.indeed.com/aazvkthysqjd",
+"r": "Destaque APIs em Django/FastAPI em produção e integração de LLMs/agentes de IA. Mencione uso de IDE com IA. Lacunas: LangChain, MongoDB/OpenSearch (cite Firestore) e Celery. O texto oscila entre pleno e sênior: venda os resultados de impacto.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analista de Dados Pl - Unidade Santana (Hibrido)",
+"e": "Atento TI",
+"d": "SQL Server (procedures, views, triggers), ETL com SSIS, modelagem e dashboards em Power BI. CLT, híbrido no bairro de Santana (SP), 9h-18h. Salário R$ 4.876. Publicada em 21/10/2026.",
+"s": 72,
+"u": "https://to.indeed.com/aahg2qtgym8v",
+"r": "Seu SQL Server é o centro da vaga: destaque refatoração de stored procedures (96h para 1h em 1,5 bi de linhas). Lacunas: SSIS e Power BI (cite ETL em Python e relatórios para o negócio). Salário pode ficar abaixo do seu momento.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenheiro de Dados Pleno / SSIS",
+"e": "4Solution Group",
+"d": "Consultoria: SQL avançado, Python e ETL com SSIS. PJ, 100% remoto, contrato indeterminado com renovação semestral. Publicada em 23/10/2026.",
+"s": 72,
+"u": "https://to.indeed.com/aaf4bj6k86nt",
+"r": "Requisitos curtos e alinhados: SQL avançado (query tuning) + Python. Lacuna: SSIS; cite pipelines de ingestão próprios. Atenção: PJ com renovação semestral.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Desenvolvedor(a) Python Pleno",
+"e": "Platform Builders",
+"d": "Backend Python com Django/FastAPI/Flask: APIs, microsserviços, integrações, mensageria (Kafka/RabbitMQ/Celery), testes com pytest, cloud, Docker/Kubernetes e CI/CD. CLT, remoto. Publicada em 23/10/2026.",
+"s": 70,
+"u": "https://to.indeed.com/aambfgj2tkdc",
+"r": "Destaque APIs REST em FastAPI/Django rodando em produção, microsserviços, PostgreSQL/SQLAlchemy e Docker. Lacunas: mensageria assíncrona, pytest, cloud e Kubernetes. Mencione uso de IA no desenvolvimento.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analista de Desenvolvimento de Sistemas Pleno - Python, Django, React e SQL Server",
+"e": "EISA Interagrícola S/A",
+"d": "Trading de café/algodão: aplicações web em Python, Django e React; administrar e otimizar SQL Server. CLT, 100% home office. Publicada em 06/08/2026 (anúncio antigo, pode ter fechado).",
+"s": 70,
+"u": "https://to.indeed.com/aak6s8szssz7",
+"r": "Stack quase idêntica à sua: Django + SQL Server com otimização. Lacuna: React. Vaga antiga: confira se ainda está aberta antes de investir tempo.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Pessoa Desenvolvedora Pleno – Foco em Desenvolvimento Agêntico",
+"e": "Nimbi",
+"d": "Produtos de dados e IA (conversa com dados, Analytics, automações) com LLMs e agentes; APIs REST, AWS (Lambda/Bedrock), PostgreSQL/Oracle, codificação agêntica (Claude Code/Cursor). São Paulo. Publicada em 01/10/2026.",
+"s": 68,
+"u": "https://to.indeed.com/aal4fcfqzjxg",
+"r": "Destaque Python + APIs, SQL com otimização e agentes de IA/LLMs. Fale do uso diário de IA para codar. Lacunas: AWS, Superset e OutSystems. Confirme o modelo de trabalho.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenheiro(a) de Inteligência Artificial - Pleno",
+"e": "Gol Linhas Aéreas",
+"d": "Time de Data Science: agentes de IA com LLMs, RAG, workflows agênticos, integração com APIs e bancos, observabilidade e guardrails. Python, SQL, Azure, Docker, CI/CD. Remoto com idas eventuais a SP. Publicada em 08/10/2026.",
+"s": 66,
+"u": "https://to.indeed.com/aapgtxyp6xq2",
+"r": "Destaque integração de LLMs/agentes, APIs REST e SQL. Cite certificação Databricks Generative AI. Lacunas: LangChain/LangGraph, bancos vetoriais, Azure e avaliação de LLMs.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenheiro de Dados",
+"e": "Cadmus",
+"d": "ETL/ELT em SQL Server, Spark e NoSQL; migrar rotinas de SQL Server para PySpark; automações em Python; modernização em GCP. Barueri, SP. Publicada em 19/10/2026.",
+"s": 62,
+"u": "https://to.indeed.com/aattc2mcmz7q",
+"r": "Seu ponto forte é a origem da migração (SQL Server e procedures pesadas). Lacunas: PySpark, GCP e Qlik. Cite Databricks (Spark) nas certificações.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analytics Engineer Pleno",
+"e": "Pier Seguradora",
+"d": "Modelagem (3NF, Star, Snowflake), SQL avançado, Python, Airflow, AWS (S3/Athena), git e dbt, CI/CD e desenvolvimento com IA. Mínimo 3 anos em dados. Remoto. Publicada em 22/10/2026.",
+"s": 60,
+"u": "https://to.indeed.com/aa8jd2bp4ylm",
+"r": "Destaque SQL avançado, otimização de consultas, pipelines de ingestão e dbt. Lacunas: Airflow, AWS e 3 anos de experiência (você tem ~2,5 contando trainee).",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analista de TI Pleno - Dados",
+"e": "CSN - Companhia Siderúrgica Nacional",
+"d": "Pipelines ETL/ELT, Databricks/Snowflake, SQL avançado, Python para APIs e automação, Azure DevOps CI/CD e projetos com SAP. São Paulo. Publicada em 19/10/2026.",
+"s": 52,
+"u": "https://to.indeed.com/aa6dg6td4gfz",
+"r": "Destaque SQL avançado, Python para APIs e certificações Databricks. Lacunas: vivência SAP (exigida), Azure DevOps e Lakehouse em produção.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "[Tecnologia] Especialista de Tecnologia RPA",
+"e": "CONTABILIZEI",
+"d": "Arquitetar e liderar automações RPA em Python (Playwright/Selenium), IA generativa para robôs self-healing, GCP (Cloud Run/Functions/Pub/Sub), microsserviços e CI/CD GitLab. Remoto. Publicada em 23/10/2026.",
+"s": 45,
+"u": "https://to.indeed.com/aatj6vwftmy2",
+"r": "Setor contábil igual ao seu e RPA/IA combinam. Mas é especialista com liderança técnica; lacunas em Playwright/Selenium e GCP.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "AI Engineering Specialist",
+"e": "Winnin",
+"d": "Agentes de IA em produção com Python, LangChain/LangGraph, APIs, MCP, bancos vetoriais e avaliação de LLMs. Exige 5+ anos. CLT, 100% remoto. Publicada em 23/10/2026.",
+"s": 42,
+"u": "https://to.indeed.com/aahgpdjqwpxr",
+"r": "Tema alinhado (agentes, APIs, SQL), mas pede 5+ anos e experiência com RAG/vetoriais em produção. Candidatura de baixa chance.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenheiro de Dados Pleno",
+"e": "CBYK",
+"d": "Na prática é BI/Analytics: dashboards em Looker, modelos semânticos em LookML, KPIs, BigQuery/GCP. PJ, remoto. Publicada em 15/10/2026.",
+"s": 40,
+"u": "https://to.indeed.com/aal7846yvjyh",
+"r": "SQL e modelagem combinam, mas o núcleo é Looker/LookML e BigQuery, que você não tem.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analista de Dados Pleno II - Remoto",
+"e": "VML",
+"d": "Dados de mídia paga e marketing digital: SQL, BigQuery, Power BI/Looker Studio, GA4, KPIs de funil. Apesar do título, o modelo é híbrido (4 dias no escritório em SP). Publicada em 22/10/2026.",
+"s": 40,
+"u": "https://to.indeed.com/aah9lrdzdvtk",
+"r": "SQL e cruzamento de dados combinam; lacunas em GA4, mídia digital e Power BI. Atenção: título diz remoto, texto diz híbrido.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analista de BI Sênior (Power BI)",
+"e": "Cruzeiro do Sul Educacional",
+"d": "Power BI avançado (DAX, Power Query, RLS), modelagem dimensional, SQL e integrações, liderança técnica. São Paulo. Publicada em 22/10/2026.",
+"s": 38,
+"u": "https://to.indeed.com/aatfnf4ngczb",
+"r": "SQL e integrações combinam, mas é sênior e centrado em Power BI/DAX.",
+"dt": "2026-10-27",
+"p": "Indeed",
+"c": false
 }
 ]
