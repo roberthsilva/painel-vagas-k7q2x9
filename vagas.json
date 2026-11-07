@@ -1307,5 +1307,126 @@
 "dt": "2026-10-27",
 "p": "Indeed",
 "c": false
+},
+{
+"t": "Engenheiro de Dados Pleno",
+"e": "Credimorar",
+"d": "Crédito imobiliário: modelagem de tabelas transacionais, scripts SQL e procedures em Azure SQL/PostgreSQL com foco em performance, pipelines com Azure Data Factory e Python, Data Warehouse e DataMarts, Azure DevOps. São Paulo (modelo não informado; oferece VT). Publicada em 03/11/2026.",
+"s": 74,
+"u": "https://to.indeed.com/aats6nkgmq4v",
+"r": "Encaixe forte: procedures e otimização de SQL (96h para 1h), PostgreSQL, ingestão em Python e validação de dados. Mencione uso de IA no desenvolvimento. Lacunas: Azure Data Factory e Azure DevOps. Confirme se é presencial ou híbrido.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenharia de Software Fullstack Pleno - Python e React | RD Station (Remoto)",
+"e": "RD Station",
+"d": "Aliança de IA da RD Station (TOTVS): backend em Python, APIs e arquiteturas para agentes de IA, integração entre produtos; React para atuação full stack; SQL/NoSQL e eventos. Remoto. Publicada em 29/10/2026.",
+"s": 68,
+"u": "https://to.indeed.com/aagpks9dg68k",
+"r": "Destaque APIs REST em Python (FastAPI/Django) e integração de LLMs/agentes. Lacunas: React, mensageria (Kafka/PubSub) e observabilidade. Processo tem desafio técnico.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "RPA e Automação Junior, Pleno e Senior | Remoto",
+"e": "Solutis Tecnologias",
+"d": "Banco de talentos para hiperautomação em grande cliente financeiro: robôs RPA, integração com sistemas e bancos, documentação. Python, SQL e uma ferramenta de RPA (IBM RPA, Power Automate, UiPath ou Automation Anywhere). 100% remoto, contratações até dez/2026. Publicada em 03/11/2026.",
+"s": 66,
+"u": "https://to.indeed.com/aaq6dyryq2rv",
+"r": "Indique o perfil Desenvolvedor em Automação Pleno. Destaque robôs de ingestão em Python (-60% de erros) e automação que reduziu 10 dias para 2h. Lacuna: ferramenta de RPA de mercado (vale um curso rápido de Power Automate ou UiPath).",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "ENGENHEIRO DE DADOS PLENO",
+"e": "Biolab Farmacêutica",
+"d": "Pipelines e modelos de dados ponta a ponta: SQL/T-SQL e PL/SQL, Azure Data Lake/Data Factory/Databricks, Python para ETL, PySpark, CI/CD, Power BI. Diferencial dbt e SSIS. CLT, presencial em Pinheiros (SP). Publicada em 22/10/2026.",
+"s": 58,
+"u": "https://to.indeed.com/aaq9vtbwq7nn",
+"r": "Destaque T-SQL, ETL em Python e dbt (diferencial). Cite certificações Databricks. Lacunas: Azure e PySpark em produção. Atenção: 100% presencial.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "[Job - 32464] AI Python Engineer, Brazil",
+"e": "Ci&T",
+"d": "Plataforma de atendimento via WhatsApp com IA generativa: backend Python, agentes com LangChain/LangGraph, RAG, embeddings e bancos vetoriais, APIs OpenAI/Anthropic. Remoto. Publicada em 05/11/2026.",
+"s": 58,
+"u": "https://to.indeed.com/aa2bqhywb4pd",
+"r": "Destaque integração de LLMs/agentes e APIs em Python; cite uso de Claude Code/Cursor (diferencial). Lacunas: LangChain/LangGraph, RAG com vetoriais e Spec-Driven Development.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Software Engineer (Python)",
+"e": "Softdesign",
+"d": "Engenharia de dados com Python: pipelines ETL batch, SQL complexo, APIs REST, Databricks/Spark, AWS, Oracle e MongoDB, CI/CD (Jenkins/GitLab). CLT ou PJ, 100% remoto. Publicada em 27/10/2026.",
+"s": 58,
+"u": "https://to.indeed.com/aaqq7z9w7cvq",
+"r": "Destaque Python backend, ETL e SQL avançado; cite certificações Databricks. Lacunas: Spark em produção, AWS, Oracle e MongoDB.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenheiro(a) de Dados Pleno (Databricks)",
+"e": "Serasa",
+"d": "Time de meios de pagamento: pipelines de ingestão em Databricks, PySpark, Python e SQL, CI/CD, modelagem para lakes/warehouses, cloud AWS ou Azure. São Paulo. Publicada em 28/10/2026.",
+"s": 55,
+"u": "https://to.indeed.com/aamtjvhgj7w8",
+"r": "Destaque grandes volumes (1,5 bi de linhas) e certificações Databricks. Lacunas: PySpark/Databricks Workflows em produção, cloud e vivência em meios de pagamento.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenheiro(a) de Dados Pleno",
+"e": "Maxxidata",
+"d": "Projetos em multinacional: pipelines ETL/ELT com SQL e Python, BigQuery, Denodo e AWS, data discovery, interação com times da América Latina. Exige inglês avançado. CLT ou PJ, São Paulo. Publicada em 06/11/2026.",
+"s": 48,
+"u": "https://to.indeed.com/aagpctrr9vwn",
+"r": "SQL, Python e ETL combinam. Barreira principal: inglês avançado obrigatório (o seu é básico). Lacunas: BigQuery, Denodo e AWS.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analista de Dados Pl - Foco em Ciências de Dados (Remoto)",
+"e": "DUX Company",
+"d": "Análises, modelos de Machine Learning, dashboards em Power BI/Data Studio, SQL no BigQuery e Python para estatística e ML. Remoto, 44h semanais. Publicada em 26/10/2026.",
+"s": 48,
+"u": "https://to.indeed.com/aaxd22kgm2zh",
+"r": "SQL e Python combinam. Lacunas: Machine Learning (exigido), estatística, Power BI e GCP.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Engenheiro(a) de IA – Agentes",
+"e": "Omie",
+"d": "Agentes com LangChain/LangGraph, LLMs via Amazon Bedrock, RAG com OpenSearch/S3 Vectors, APIs (FastAPI) ligando agentes ao ERP, AWS serverless, evals e observabilidade. Remoto. Publicada em 28/10/2026.",
+"s": 48,
+"u": "https://to.indeed.com/aajvjjqpblw7",
+"r": "FastAPI, agentes de IA e vivência contábil/backoffice (diferencial) combinam. Mas pede LLMs em produção com LangGraph, RAG e AWS Bedrock: perfil mais sênior.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
+},
+{
+"t": "Analista de Ciência de Dados Pleno",
+"e": "Ingram Micro",
+"d": "BRLink (Dados & IA): modelos de Machine Learning e IA para clientes, estatística, pipelines, MLOps, AWS. Python e SQL. Inglês intermediário/avançado. São Paulo. Publicada em 29/10/2026.",
+"s": 40,
+"u": "https://to.indeed.com/aammx8ym2x6h",
+"r": "Python e SQL combinam, mas o núcleo é ciência de dados/ML e estatística, além de inglês intermediário+.",
+"dt": "2026-11-07",
+"p": "Indeed",
+"c": false
 }
 ]
